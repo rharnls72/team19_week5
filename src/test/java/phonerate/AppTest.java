@@ -10,7 +10,8 @@ import junit.framework.TestSuite;
 public class AppTest extends TestCase{
 	TotalRate total;
 	User user;
-	String silver = "silver", gold = "gold";
+	String silver = "silver";
+	String gold = "gold";
 	/**
 	 * Create the test case
 	 *
