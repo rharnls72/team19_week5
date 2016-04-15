@@ -32,7 +32,6 @@ public class AppTest extends TestCase{
 	 * Rigourous Test :-)
 	 */
 	public void testApp()	{
-		App app = new App();
 		assertTrue( true );
 	}
 	public void testGoldNoLine(){
