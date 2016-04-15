@@ -2,7 +2,7 @@ package phonerate;
 
 public class Plan {
 	private double rateperadditionalminute;
-	private double includedminutes;
+	private int includedminutes;
 	private double rateperadditionalline;
 	private double planrate;
 	private Gold gold;
@@ -25,7 +25,7 @@ public class Plan {
 	public double rateperadditionalminute() {
 		return rateperadditionalminute; 
 	}
-	public double includedminutes() {
+	public int includedminutes() {
 		return includedminutes; 
 	}
 	public double rateperadditionalline() {
