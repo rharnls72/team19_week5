@@ -14,7 +14,8 @@ public class Plan {
 			this.includedminutes = gold.includedminutes();
 			this.rateperadditionalline = gold.rateperadditionalline();
 			this.planrate = gold.planrate();
-		}else if("silver".equals(user.type())){
+		}
+		if("silver".equals(user.type())){
 			silver = new Silver();
 			this.rateperadditionalminute = silver.rateperadditionalminute();
 			this.includedminutes = silver.includedminutes();
