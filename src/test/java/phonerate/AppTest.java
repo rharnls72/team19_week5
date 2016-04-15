@@ -236,6 +236,6 @@ public class AppTest extends TestCase{
       		assertEquals(29.95,total.planrate(),10);
       		assertEquals(540.0,total.excessminuterate(),10);
       		assertEquals(43.0,total.additionallinerate(),10);
-      	assertEquals(10.0,total.familyrate(),10);
+      		assertEquals(10.0,total.familyrate(),10);
    	}
 }
