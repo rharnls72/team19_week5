@@ -22,7 +22,7 @@ public class TotalRate {
 	}
 	public double excessminuterate() {
 		if(user.minutesofuse() > plan.includedminutes()) {
-			double temp = user.minutesofuse()-plan.includedminutes();
+			int temp = user.minutesofuse()-plan.includedminutes();
 			this.excessminuterate= temp*plan.rateperadditionalminute();
 		}else{
 			this.excessminuterate= 0;
