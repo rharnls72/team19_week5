@@ -41,7 +41,7 @@ public class TotalRate {
 	}
 	public double familyrate() {
 		if (user.numberofline()>3){ 
-			familyrate = (user.numberofline() - 3)*5;
+			familyrate = (user.numberofline() - 3)*(double)5;
 		}else {
 			familyrate = 0;
 		}
