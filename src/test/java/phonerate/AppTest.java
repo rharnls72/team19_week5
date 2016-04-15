@@ -50,4 +50,22 @@ public class AppTest extends TestCase{
 		assertEquals(0.0,total.additionallinerate(),10);
 		assertEquals(0.0,total.familyrate(),10);
 	}
+	     public void testGoldLineOne(){
+        user=new User("gold", 1, 900);
+        total=new TotalRate(user);
+        assertEquals(49.95,total.totalrate(),10);
+        assertEquals(49.95,total.planrate(),10);
+        assertEquals(0.0,total.excessminuterate(),10); 
+        assertEquals(0.0,total.additionallinerate(),10);
+        assertEquals(0.0,total.familyrate(),10);
+     }
+     public void testSilverLineOne() {
+        user = new User("silver", 1, 300);
+        total = new TotalRate(user);
+        assertEquals(29.95, total.totalrate(),10);
+        assertEquals(29.95,total.planrate(),10);
+        assertEquals(0.0,total.excessminuterate(),10); 
+        assertEquals(0.0,total.additionallinerate(),10);
+        assertEquals(0.0,total.familyrate(),10);
+     }
 }
