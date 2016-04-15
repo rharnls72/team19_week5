@@ -105,7 +105,7 @@ public class AppTest extends TestCase{
 		assertEquals(43.0,total.additionallinerate(),10);
 		assertEquals(0.0,total.familyrate(),10);
 	}
-public void testGoldFamily1(){
+	public void testGoldFamily1(){
 		user=new User("gold", 4, 878);
 		total=new TotalRate(user);
 		assertEquals(83.95,total.totalrate(),10);
