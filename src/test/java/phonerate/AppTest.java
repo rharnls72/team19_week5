@@ -105,5 +105,40 @@ public class AppTest extends TestCase{
 		assertEquals(43.0,total.additionallinerate(),10);
 		assertEquals(0.0,total.familyrate(),10);
 	}
-
+public void testGoldFamily1(){
+		user=new User("gold", 4, 878);
+		total=new TotalRate(user);
+		assertEquals(83.95,total.totalrate(),10);
+		assertEquals(49.95,total.planrate(),10);
+		assertEquals(0.0,total.excessminuterate(),10); 
+		assertEquals(29.0,total.additionallinerate(),10);
+		assertEquals(5.0,total.familyrate(),10);
+	}
+	public void testGoldFamily2(){
+		user=new User("gold", 5, 878);
+		total=new TotalRate(user);
+		assertEquals(88.95,total.totalrate(),10);
+		assertEquals(49.95,total.planrate(),10);
+		assertEquals(0.0,total.excessminuterate(),10); 
+		assertEquals(29.0,total.additionallinerate(),10);
+		assertEquals(10.0,total.familyrate(),10);
+	}
+	public void testSilverFamily1() {
+		user = new User("silver", 4, 400);
+		total = new TotalRate(user);
+		assertEquals(77.95, total.totalrate(),10);
+		assertEquals(29.95,total.planrate(),10);
+		assertEquals(0.0,total.excessminuterate(),10); 
+		assertEquals(43.0,total.additionallinerate(),10);
+		assertEquals(5.0,total.familyrate(),10);
+	}
+	public void testSilverFamily2() {
+		user = new User("silver", 5, 400);
+		total = new TotalRate(user);
+		assertEquals(82.95, total.totalrate(),10);
+		assertEquals(29.95,total.planrate(),10);
+		assertEquals(0.0,total.excessminuterate(),10); 
+		assertEquals(43.0,total.additionallinerate(),10);
+		assertEquals(10.0,total.familyrate(),10);
+	}
 }
