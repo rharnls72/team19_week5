@@ -16,7 +16,6 @@ public class AppTest extends TestCase{
 	 * @param testName name of the test case
 	 */
 	public AppTest( String testName ){
-		App app = new App();
 		super( testName );
 	}
 
@@ -31,6 +30,7 @@ public class AppTest extends TestCase{
 	 * Rigourous Test :-)
 	 */
 	public void testApp()	{
+		App app = new App();
 		assertTrue( true );
 	}
 	public void testGoldNoLine(){
