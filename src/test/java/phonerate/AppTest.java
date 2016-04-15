@@ -141,4 +141,22 @@ public class AppTest extends TestCase{
 		assertEquals(43.0,total.additionallinerate(),10);
 		assertEquals(10.0,total.familyrate(),10);
 	}
+		public void testGoldExcessMinutes(){
+		user=new User("gold", 1, 1123);
+		total=new TotalRate(user);
+		assertEquals(105.3,total.totalrate(),10);
+		assertEquals(49.95,total.planrate(),10);
+		assertEquals(55.35,total.excessminuterate(),10); 
+		assertEquals(0.0,total.additionallinerate(),10);
+		assertEquals(0.0,total.familyrate(),10);
+	}
+	public void testSilverExcessMinutes(){
+		user=new User("silver", 1, 700);
+		total=new TotalRate(user);
+		assertEquals(137.95,total.totalrate(),10);
+		assertEquals(29.95,total.planrate(),10);
+		assertEquals(108.0,total.excessminuterate(),10); 
+		assertEquals(0.0,total.additionallinerate(),10);
+		assertEquals(0.0,total.familyrate(),10);
+	}
 }
